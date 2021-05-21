@@ -1,0 +1,8 @@
+setint
+bit
+ini
+favor
+getfavornpccheck
+fashionbag
+cs
+set
