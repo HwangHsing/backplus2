@@ -11,7 +11,7 @@ fi
 
 if which brew >/dev/null;then
 	echo "brew"
-	brew install vim ctags git autojump
+	brew install vim ctags git autojump ripgrep
 fi
 #cscope 安装
 sudo yum install cscope
