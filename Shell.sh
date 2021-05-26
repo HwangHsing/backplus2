@@ -2,11 +2,13 @@
 echo "hello,world 开始环境部署Centos/Unbuntu/Mac 如果没有homebrew 需先安装 yum apt-get brew"
 if which apt-get >/dev/null;then
 	echo "apt-get"
-	sudo apt-get install -y vim vim-gnome ctags xclip astyle python-setuptools python-dev git
+	sudo apt-get install -y vim vim-gnome ctags xclip astyle python-setuptools python-dev git ripgrep
 elif which yum >/dev/null;then
 	echo "yum"
 	sudo yum install -y gcc vim git ctags xclip python-setuptools python-devel zsh cscope 
 	git clone git://github.com/joelthelion/autojump.git
+    sudo yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
+    sudo yum install -y ripgrep
 fi
 
 if which brew >/dev/null;then
@@ -14,7 +16,6 @@ if which brew >/dev/null;then
 	brew install vim ctags git autojump ripgrep
 fi
 #cscope 安装
-sudo yum install cscope
 sudo easy_install -ZU autopep8 
 sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 yum install zsh -y

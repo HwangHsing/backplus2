@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo ¡°ÃèÊö[$1]¡±
+echo ¡°description[$1]¡±
 passwd="Sasa1906!"
 User="HwangHsing"
 git add *

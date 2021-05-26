@@ -3,7 +3,6 @@
 # coding程序猿的专属vimrc配置!
 
 该vim配置拥有各种大气的被动和主动技能！！
-需要自行 安装ctags cscope ripgrep
 ## 一分钟极速安装 (如果是windows，强烈推荐安装[BabunShell](https://github.com/babun/babun))
 ```sh
 curl 'https://gitee.com/lee1989/vim-for-coding/raw/master/install.sh' | sh
